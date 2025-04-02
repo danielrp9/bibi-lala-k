@@ -1,0 +1,270 @@
+:root {
+    --primary-color: #FF2D78; /* Rosa vibrante */
+    --secondary-color: #ff00ae; /* Laranja */
+    --accent-color: #00C2FF; /* Azul claro */
+    --light-color: #FFF0F5;
+    --dark-color: #5E005E; /* Roxo escuro */
+    --green-color: #00D166; /* Verde limão */
+    --yellow-color: #ea00ff; /* Amarelo ouro */
+}
+
+body {
+    font-family: 'Baloo 2', cursive, sans-serif;
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--yellow-color));
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 30px 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.product-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 25px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border: 3px solid white;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border-color: var(--accent-color);
+}
+
+.product-img {
+    height: 280px;
+    object-fit: cover;
+    background: linear-gradient(45deg, #FFD1DC, #FFECF1);
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.badge-sale {
+    background-color: var(--green-color);
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.badge-new {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.size-badge {
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    background: linear-gradient(135deg, var(--dark-color), #8A2BE2);
+    color: rgb(255, 255, 255);
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.category-btn {
+    background-color: white;
+    color: var(--dark-color);
+    border: 3px solid var(--secondary-color);
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.category-btn.active, .category-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.newsletter-input {
+    border-radius: 25px 0 0 25px;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+}
+
+.newsletter-btn {
+    border-radius: 0 25px 25px 0;
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 12px;
+    transition: all 0.3s;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.social-icon:hover {
+    color: var(--yellow-color);
+    transform: scale(1.2);
+}
+
+.features-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--accent-color);
+    transition: all 0.3s;
+}
+
+.features-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.features-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #FF0066;
+    border-color: #FF0066;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 45, 120, 0.3);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.card-title {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+/* Efeito de confete nos badges */
+@keyframes confetti {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(360deg); }
+}
+
+.confetti-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.confetti-effect:after {
+    content: "✦";
+    position: absolute;
+    color: var(--yellow-color);
+    font-size: 1.2rem;
+    animation: confetti 2s infinite alternate;
+    right: 10px;
+    top: -10px;
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    gap: 15px; /* Espaço entre a logo e o texto */
+}
+
+.navbar-logo {
+    height: 90px; /* Aumentei para 60px (era 50px) */
+    transition: transform 0.3s ease;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 90px; /* Um pouco menor em mobile */
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem; /* Texto menor em mobile */
+    }
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: rotate(10deg) scale(1.1);
+}
